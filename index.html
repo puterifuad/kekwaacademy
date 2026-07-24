@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Sarab">
+      <meta name="description" content="Kekwa Academy - Pusat Tuisyen Akademik &  Islam">
+      <title>Kekwa Academy - Pusat Tuisyen Akademik & Pengajian Islam</title>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+      <!-- Bootstrap 5.3 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <!-- AOS Animate on Scroll -->
+      <link href="css/aos.css" rel="stylesheet"/>
+      <!-- Swiper -->
+      <link href="css/swiper-bundle.min.css" rel="stylesheet"/>
+      <!-- all min css -->
+      <link rel="stylesheet" href="css/all.min.css"/>
+      <!-- magnific CSS -->
+      <link rel="stylesheet" href="css/magnific-popup.css"/>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- ============================================================
+         TOP BAR
+         ============================================================ -->
+      <div id="topbar">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <div class="top-contact d-flex flex-wrap">
+                  <span><i class="fas fa-phone-alt"></i>+60 16-301 6334</span>
+                  <span><i class="fas fa-envelope"></i>admin@kekwaacademy.com</span>
+                  <span><i class="fas fa-map-marker-alt"></i>Blok 6, Laman Seri Business Park, Seksyen 13, Shah Alam</span>
+               </div>
+               <div class="d-flex align-items-center gap-3">
+                  <span class="ttag"><i class="fas fa-fire me-1"></i>Pendaftaran kini dibuka!</span>
+                  <div class="tsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+      <nav class="navbar navbar-expand-lg" id="nav">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <div class="blogo">
+                      <img src="img\logo.png" alt="Kekwa Academy Logo">
+                  <div>
+                     <div class="bname">Kekwa<span>Academy</span></div>
+                     <div class="bsub">Pusat Tuisyen Akademik & Pengajian Islam</div>
+                  </div>
+               </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link active" href="index.html">Utama</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">Tentang Kekwa</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#menu">Pakej Kelas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tutor.html">Tutors</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#testimonials">Testimoni</a></li>
+               </ul>
+               <div class="d-flex align-items-center gap-1">
+                  <!-- FIX 1: Search button -->
+                  <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
+<a href="https://wa.me/60163016334?text=Assalamualaikum.%20Saya%20berminat%20untuk%20mengetahui%20lebih%20lanjut%20mengenai%20kelas%20tuisyen%20di%20Kekwa%20Academy.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%3F"
+   class="nav-link nav-cta btn-whatsapp"
+   target="_blank"
+   rel="noopener">
+    <i class="fab fa-whatsapp me-1"></i> Daftar Sekarang
+</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- ============================================================
+         FIX 1 � SEARCH OVERLAY POPUP
+         ============================================================ -->
+      <div id="searchOv">
+         <button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+         <div class="sovbox">
+            <h4>What are you craving today?</h4>
+            <div class="sovinput">
+               <input type="text" id="searchInput" placeholder="Search burgers, pizza, chicken..." autocomplete="off"/>
+               <button><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Categories inside search box -->
+            <div class="sovcats">
+               <div class="sovcat active" data-cat="all">
+                  <img src="img/menu/1.jpg" alt=""/>All Items
+               </div>
+               <div class="sovcat" data-cat="burgers">
+                  <img src="img/menu/1.jpg" alt=""/>Burgers
+               </div>
+               <div class="sovcat" data-cat="pizza">
+                  <img src="img/menu/2.jpg" alt=""/>Pizza
+               </div>
+               <div class="sovcat" data-cat="chicken">
+                  <img src="img/menu/3.jpg" alt=""/>Chicken
+               </div>
+               <div class="sovcat" data-cat="wraps">
+                  <img src="img/menu/4.jpg" alt=""/>Wraps
+               </div>
+               <div class="sovcat" data-cat="pasta">
+                  <img src="img/menu/5.jpg" alt=""/>Pasta
+               </div>
+               <div class="sovcat" data-cat="desserts">
+                  <img src="img/menu/6.jpg" alt=""/>Desserts
+               </div>
+            </div>
+            <div class="sovtrend">
+               <p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>Trending Searches</p>
+               <span class="ttag">Smash Burger</span>
+               <span class="ttag">Nashville Chicken</span>
+               <span class="ttag">Truffle Pizza</span>
+               <span class="ttag">Lava Cake</span>
+               <span class="ttag">Loaded Fries</span>
+               <span class="ttag">Mango Shake</span>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         HERO
+         ============================================================ -->
+      <section id="hero">
+         <div class="hs hs1"></div>
+         <div class="hs hs2"></div>
+         <div class="hbgtxt">Kekwa</div>
+         <div class="container">
+            <div class="row align-items-center g-5" style="min-height:88vh;">
+               <div class="col-lg-6">
+                  <div class="hbadge">
+                     <div class="hbi"><i class="fas fa-star"></i></div>
+                     <span>#1 Pusat Tuisyen Terbaik di Shah Alam</span>
+                  </div>
+                  <h1 class="htitle">Belajar dengan<span class="hl">Semangat</span><br/>di Kekwa Academy</h1>
+                  <p class="hdesc">Kami komited melonjakkan potensi akademik anak anda melalui pembelajaran berfokus, interaktif, dan ceria. Dibimbing oleh guru berkelayakan dalam suasana yang kondusif untuk pencapaian maksimum.</p>
+                  <div class="d-flex flex-wrap gap-3 mb-2">
+                     <a href="#menu" class="btn-red"><i class="fas fa-book-open"></i>Lihat Pakej Kelas</a>
+                     <a href="https://www.instagram.com/reel/DMpfrP8ycA4/" 
+                        class="btn-play" 
+                        target="_blank" 
+                        rel="noopener">
+                        <div class="pico"><i class="fas fa-play"></i></div>
+                        <span>Video Pembelajaran</span>
+                     </a>
+                  </div>
+                  <div class="hstats d-flex gap-3 flex-wrap mt-4">
+                     <div class="hstat"><span class="snum" data-count="400">0<em>+</em></span><small>Pelajar Berdaftar</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum" data-count="6">0<em>+</em></span><small>Program Kelas</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum" data-count="20">0<em>+</em></span><small>Guru Berpengalaman</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum" data-count="4">0<em>+</em></span><small>Tahun Beroperasi</small></div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                     <div class="hcircle">
+                        <img src="img/banner 1.png" alt="Burger"/>
+                     </div>
+                     <div class="fcard fc1">
+                        <div class="fcoi r"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div><span class="fcnum">500+</span><span class="fcsm">Pelajar Berdaftar</span></div>
+                     </div>
+                     <div class="fcard fc3">
+                        <div class="fcoi y"><i class="fa-solid fa-book"></i></div>
+                        <div><span class="fcnum">6+</span><span class="fcsm">Program Kelas</span></div>
+                     </div>
+                     <div class="fcard fc2">
+                        <div class="fcoi g"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+                        <div><span class="fcnum">20+</span><span class="fcsm">Guru Berpengalaman</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- SCROLL BANNER -->
+      <div class="mqsec">
+         <div class="mqtrack">
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Bahasa Arab</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Jawi</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Fardhu ain</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>UPKK &amp; PSRA</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Al-Quran</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Bahasa Melayu</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>English</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Sains</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Matematik</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Bahasa Arab</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>UPKK &amp; PSRA</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Iqra</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Sains</div>
+            <div class="mqitem"><i class="fa-solid fa-book-open"></i>Matematik</div>
+         </div>
+      </div>
+      <!-- ABOUT -->
+      <section id="about">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="astack">
+                     <div class="aexp"><span class="anum">4+</span><small>Tahun<br/>Operasi</small></div>
+                     <div class="amain"><img src="img/about1.jpg" alt="Restaurant"/></div>
+                     <div class="asm"><img src="img/about2.jpg" alt=""/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7" data-aos="fade-left">
+                  <span class="slbl">Tentang Kami</span>
+<h2 class="stitle text-start">Dedikasi Ke Arah <span>Kecemerlangan</span></h2>
+                  <div class="sline lft"></div>
+                  <p class="sdesc mb-4">Ditubuhkan dan beroperasi sejak tahun 2022, Pusat Tuisyen Kekwa (No. SSM: 202203312229) bermula dengan misi yang jelas: melahirkan pelajar yang cemerlang dari segi akademik dan sahsiah. Kami menyediakan latihan dan bimbingan intensif yang berterusan untuk memastikan pencapaian terbaik anak anda.</p>
+                  <div class="mb-4">
+                     <div class="fti">
+                        <div class="ftico r"><i class="fas fa-user-graduate"></i></div>
+                        <div>
+                           <h6>Guru Berpengetahuan & Berpengalaman</h6>
+                           <p>Barisan pendidik kami memiliki sekurang-kurangnya ijazah sarjana muda dalam bidang berkaitan dan amat berdedikasi dalam mengajar.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico y"><i class="fas fa-users"></i></div>
+                        <div>
+                           <h6>Fokus Sepenuhnya</h6>
+                           <p>Kami mengehadkan maksimum jumlah murid di dalam satu kelas kepada 15 orang sahaja untuk memastikan setiap pelajar mendapat tumpuan penuh.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico g"><i class="fas fa-building"></i></div>
+                        <div>
+                           <h6>Fasiliti Lengkap & Selesa</h6>
+                           <p>Susunan kelas yang teratur, berhawa dingin sepenuhnya, serta dilengkapi dengan kemudahan lif khas terus ke pusat tuisyen kami.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-book-open"></i>Lihat Pakej Kelas</a>               </div>
+            </div>
+         </div>
+      </section>
+<!-- ============================================================
+         MENU - PAKEJ KELAS
+         ============================================================ -->
+      <section id="menu">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Program Kami</span>
+               <h2 class="stitle">Pilihan <span>Pakej Kelas</span></h2>
+               <div class="sline"></div>
+            </div>
+            <!-- Filter buttons -->
+            <div class="text-center mb-4" data-aos="fade-up">
+               <button class="filtbtn active" data-f="all">Semua Kelas</button>
+               <button class="filtbtn" data-f="akademik">Akademik</button>
+               <button class="filtbtn" data-f="agama">Agama & Mengaji</button>
+               <button class="filtbtn" data-f="bahasa">Bahasa & Membaca</button>
+               <button class="filtbtn" data-f="personal">Personal</button>
+            </div>
+            <div class="row g-4" id="mgrid">
+               
+<div class="row g-4" id="mgrid">
+               
+               <!-- PAKEJ 1: Tuisyen Akademik -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="akademik" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/Produk Kelas.png"
+                     data-title="Pakej Tuisyen Akademik (Sekolah Rendah)"
+                     data-cat="Akademik"
+                     data-desc="Kelas berfokuskan pemahaman konsep dan latihan berterusan untuk subjek-subjek teras sekolah rendah."
+                     data-tags="Bahasa Melayu, Bahasa Inggeris, Matematik, Sains">
+                     <div class="mimg">
+                        <img src="img/Produk Kelas.png" alt="Tuisyen Akademik"/>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Sekolah Rendah</div>
+                        <div class="mtit">Pakej Tuisyen Akademik</div>
+                        <div class="mdesc">Bahasa Melayu, Bahasa Inggeris, Matematik, Sains</div>
+                        <div class="mfoot" style="justify-content: space-between; align-items: center;">
+                           <span style="font-size: 0.85rem; color: #666;"><i class="fas fa-check-circle text-success me-1"></i>Pendaftaran Dibuka</span>
+                           <button class="madd" title="Maklumat Lanjut"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PAKEJ 2: Mengaji & Fardu Ain -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="agama" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/menu/2.jpg"
+                     data-title="Pakej Kelas Mengaji & Fardu Ain"
+                     data-cat="Agama"
+                     data-desc="Bimbingan asas kerohanian yang praktikal dan mudah difahami untuk melancarkan bacaan Al-Quran dan ibadah harian."
+                     data-tags="Iqra’ & Al-Quran, Amali Solat, Silibus Fardu Ain">
+                     <div class="mimg">
+                        <img src="img/menu/2.jpg" alt="Mengaji dan Fardu Ain"/>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Agama & Mengaji</div>
+                        <div class="mtit">Kelas Mengaji & Fardu Ain</div>
+                        <div class="mdesc">Iqra’ & Al-Quran, Amali Solat, Silibus Fardu Ain</div>
+                        <div class="mfoot" style="justify-content: space-between; align-items: center;">
+                           <span style="font-size: 0.85rem; color: #666;"><i class="fas fa-check-circle text-success me-1"></i>Pendaftaran Dibuka</span>
+                           <button class="madd" title="Maklumat Lanjut"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PAKEJ 3: Bijak Jawi -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="bahasa" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/menu/3.jpg"
+                     data-title="Pakej Kelas Bijak Jawi"
+                     data-cat="Bahasa"
+                     data-desc="Latihan komprehensif bagi membina kemahiran asas jawi yang kukuh berpandukan silibus rasmi."
+                     data-tags="Membaca, Menulis, Mengeja, Silibus KPM & Jais">
+                     <div class="mimg">
+                        <img src="img/menu/3.jpg" alt="Bijak Jawi"/>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Asas Bahasa</div>
+                        <div class="mtit">Pakej Kelas Bijak Jawi</div>
+                        <div class="mdesc">Membaca, Menulis, Mengeja, Silibus KPM & Jais</div>
+                        <div class="mfoot" style="justify-content: space-between; align-items: center;">
+                           <span style="font-size: 0.85rem; color: #666;"><i class="fas fa-check-circle text-success me-1"></i>Pendaftaran Dibuka</span>
+                           <button class="madd" title="Maklumat Lanjut"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PAKEJ 4: Bahasa Arab -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="bahasa" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/menu/4.jpg"
+                     data-title="Pakej Kelas Bahasa Arab"
+                     data-cat="Bahasa"
+                     data-desc="Pendedahan bahasa Arab yang interaktif untuk membantu pelajar berkomunikasi dan memahami kosa kata dengan berkesan."
+                     data-tags="Kosa Kata, Menulis, Komunikasi, Silibus KPM & Jais">
+                     <div class="mimg">
+                        <img src="img/menu/4.jpg" alt="Bahasa Arab"/>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Komunikasi</div>
+                        <div class="mtit">Pakej Kelas Bahasa Arab</div>
+                        <div class="mdesc">Kosa Kata, Menulis, Komunikasi, Silibus KPM & Jais</div>
+                        <div class="mfoot" style="justify-content: space-between; align-items: center;">
+                           <span style="font-size: 0.85rem; color: #666;"><i class="fas fa-check-circle text-success me-1"></i>Pendaftaran Dibuka</span>
+                           <button class="madd" title="Maklumat Lanjut"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PAKEJ 5: Membaca BM & BI -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="akademik" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/menu/5.jpg"
+                     data-title="Pakej Kelas Membaca BM & BI"
+                     data-cat="Akademik"
+                     data-desc="Kelas khas untuk anak-anak yang baru mula belajar bagi melancarkan bacaan, ejaan dan penulisan."
+                     data-tags="Membaca, Menulis, Mengeja, Asas Mengira">
+                     <div class="mimg">
+                        <img src="img/menu/5.jpg" alt="Membaca BM BI"/>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Peringkat Awal</div>
+                        <div class="mtit">Kelas Membaca BM & BI</div>
+                        <div class="mdesc">Membaca, Menulis, Mengeja, Asas Mengira</div>
+                        <div class="mfoot" style="justify-content: space-between; align-items: center;">
+                           <span style="font-size: 0.85rem; color: #666;"><i class="fas fa-check-circle text-success me-1"></i>Pendaftaran Dibuka</span>
+                           <button class="madd" title="Maklumat Lanjut"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PAKEJ 6: UPKK & PSRA -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="agama" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/menu/6.jpg"
+                     data-title="Pakej Tuisyen UPKK & PSRA"
+                     data-cat="Agama"
+                     data-desc="Persediaan rapi untuk peperiksaan dengan modul ulangkaji terancang dan panduan teknik menjawab yang betul."
+                     data-tags="Ulangkaji, Teknik Menjawab, Silibus Jais & Jakim">
+                     <div class="mimg">
+                        <img src="img/menu/6.jpg" alt="UPKK dan PSRA"/>
+                        <div class="mbdg hot"><i class="fas fa-fire"></i> Kelas Peperiksaan</div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Kelas Peperiksaan</div>
+                        <div class="mtit">Tuisyen UPKK & PSRA</div>
+                        <div class="mdesc">Ulangkaji, Teknik Menjawab, Silibus Jais & Jakim</div>
+                        <div class="mfoot" style="justify-content: space-between; align-items: center;">
+                           <span style="font-size: 0.85rem; color: #666;"><i class="fas fa-check-circle text-success me-1"></i>Pendaftaran Dibuka</span>
+                           <button class="madd" title="Maklumat Lanjut"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- end #mgrid -->
+            <div class="text-center mt-5"><a href="https://wa.me/60163016334" target="_blank" class="btn-red"><i class="fab fa-whatsapp"></i>Daftar Pakej Sekarang</a></div>
+         </div>
+      </section>
+	  
+	  
+<div id="menuPop">
+         <div class="mpbox">
+            <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+            <div class="mpimg"><img id="mpImg" src="" alt=""/></div>
+            <div class="mpbody">
+               <div id="mpCat" style="color: var(--secondary); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;"></div>
+               <div id="mpTitle" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 15px;"></div>
+               <div id="mpDesc" style="color: #666; line-height: 1.6;"></div>
+               <div class="mptags" id="mpTags" style="margin-top: 15px; margin-bottom: 20px;"></div>
+               
+               <!-- Butang WhatsApp -->
+               <a href="https://wa.me/60163016334" target="_blank" id="mpAddCart" class="mpaddcart d-block text-center text-decoration-none" style="background-color: #25D366; border-color: #25D366; color: #fff;">
+                  <i class="fab fa-whatsapp me-2"></i>Tanya di WhatsApp
+               </a>
+
+               <!-- ELEMEN DI BAWAH DISEMBUNYIKAN UNTUK MENGELAKKAN JS ERROR -->
+               <div id="mpStars" style="display: none;"></div>
+               <div id="mpPrice" style="display: none;"></div>
+               <div class="mpmeta" id="mpMeta" style="display: none;"></div>
+               <div class="mpqty" style="display: none;">
+                  <button class="mpqbtn" id="mpMinus">-</button>
+                  <span class="mpqnum" id="mpQnum">1</span>
+                  <button class="mpqbtn" id="mpPlus">+</button>
+                  <span style="display: none;">portion</span>
+               </div>
+            </div>
+         </div>
+      </div>
+ 
+	  
+ <!-- GALLERY -->
+      <section id="gallery">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Galeri Kekwa</span>
+               <h2 class="stitle">Suasana <span>Pembelajaran</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="ggrid" data-aos="fade-up">
+               <div class="gitem"
+                  data-gi="0"
+                  data-gimg="img/portfolio/work1.jpg"
+                  data-gtitle="Fokus Sepenuhnya"
+                  data-gdesc="Kelas saiz kecil membenarkan guru memberi perhatian secara individu kepada kelemahan pelajar.">
+                  <img src="img/portfolio/work1.jpg" alt="Kelas"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Fokus Pelajar</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="1"
+                  data-gimg="img/portfolio/work2.jpg"
+                  data-gtitle="Kemudahan Selesa"
+                  data-gdesc="Bilik darjah yang dilengkapi penghawa dingin penuh memastikan persekitaran yang kondusif.">
+                  <img src="img/portfolio/work2.jpg" alt="Fasiliti"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Kemudahan Selesa</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="2"
+                  data-gimg="img/portfolio/work3.jpg"
+                  data-gtitle="Latihan Berterusan"
+                  data-gdesc="Modul, nota padat, dan kertas percubaan exam sentiasa disediakan untuk ulangkaji.">
+                  <img src="img/portfolio/work3.jpg" alt="Modul"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Latihan & Modul</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="3"
+                  data-gimg="img/portfolio/work4.jpg"
+                  data-gtitle="Pembelajaran Interaktif"
+                  data-gdesc="Kami memastikan suasana kelas sentiasa ceria agar murid tidak merasa bosan dan tertekan.">
+                  <img src="img/portfolio/work4.jpg" alt="Interaktif"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Suasana Ceria</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="4"
+                  data-gimg="img/portfolio/work5.jpg"
+                  data-gtitle="Sambutan & Aktiviti"
+                  data-gdesc="Selain akademik, kami juga merai pelajar dengan pelbagai majlis ringkas penghargaan dan hari lahir.">
+                  <img src="img/portfolio/work5.jpg" alt="Aktiviti"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Aktiviti Pelajar</span></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <!-- GALLERY POPUP -->
+      <div id="galPop">
+         <div class="gpbox">
+            <button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+            <img id="gpImg" src="" alt=""/>
+            <div class="gpcap">
+               <h5 id="gpTitle"></h5>
+               <p id="gpDesc"></p>
+            </div>
+            <div class="gpnav">
+               <button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Prev</button>
+               <button id="gpNext">Next <i class="fas fa-chevron-right ms-1"></i></button>
+            </div>
+         </div>
+      </div>
+	  
+	  
+      <!-- Guru-Guru Kami -->
+      <section id="Guru-Guru Kami">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">The Culinary Team</span>
+               <h2 class="stitle">Kenali <span>Guru-Guru kami</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img\chefs\5.jpeg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Puteri Hamizah Husna</div>
+                        <div class="chrole">Pengasas I</div>
+                        <div class="chexp">BA </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/2.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Azeem Rashid</div>
+                        <div class="chrole">PENGASAS II</div>
+                        <div class="chexp">8 years experience</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/3.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Nurul Iman</div>
+                        <div class="chrole">TUTOR AGAMA</div>
+                        <div class="chexp">10 years experience</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/4.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Abdul Aziz</div>
+                        <div class="chrole">Pizza Artisan</div>
+                        <div class="chexp">9 years experience</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	   
+	<!-- TESTIMONIALS -->  
+<section id="testimonials">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Bukti Kecemerlangan</span>
+               <h2 class="stitle">Apa Kata <span>Ibu Bapa?</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="swiper tesSwiper" data-aos="fade-up">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">"Sangat berpuas hati dengan prestasi anak saya sejak masuk ke sini. Kelas tak ramai (max 15 orang), jadi cikgu boleh fokus pada kelemahan anak. Fasiliti pun sangat selesa ada lif dan aircon."</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/1.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Puan Aminah</div>
+                              <div class="tesrl">Ibu Pelajar Tahun 5</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">"Modul pembelajaran yang disediakan sangat membantu. Nota ringkas mudah difahami dan soalan ramalan yang diberikan banyak keluar waktu exam. Cikgu-cikgu juga sangat mesra dan dedikasi."</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/2.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Encik Razak</div>
+                              <div class="tesrl">Bapa Pelajar UPKK</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">"Sejak hantar anak ke kelas MAFA dan pemantapan Jawi di Kekwa Academy, nampak banyak peningkatan. Anak makin lancar baca Al-Quran dan rajin buat kerja sekolah. Terima kasih cikgu!"</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/3.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Puan Hidayah</div>
+                              <div class="tesrl">Ibu Pelajar Tahun 3</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination mt-4" style="position:static;"></div>
+            </div>
+         </div>
+      </section>	  
+	  
+	  
+<!-- CONTACT FORM -->
+      <section id="contact-section">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Ada Pertanyaan?</span>
+               <h2 class="stitle">Hubungi <span>Kami</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Mahu mendaftarkan anak anda atau perlukan konsultasi pakej yang sesuai? Tinggalkan mesej atau hubungi kami terus melalui platform di bawah.</p>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div class="ctdark">
+                     <h4>Mari Bincang</h4>
+                     <p class="ctsub">Kami sedia membantu anda mencari kelas yang terbaik untuk anak anda.</p>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="ctinfo"><strong>Alamat</strong><span>Tingkat 4, Blok 6, Laman Seri Business Park,<br/>Seksyen 13, Shah Alam</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="ctinfo"><strong>Telefon/WhatsApp</strong><span>+60 16-301 6334</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-envelope"></i></div>
+                        <div class="ctinfo"><strong>Emel</strong><span>kekwaacademy@gmail.com</span></div>
+                     </div>
+                     <div class="ctsocrow">
+                        <a href="https://www.facebook.com/PusatTuisyenKekwa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/kekwaacademy.co" target="_blank"><i class="fab fa-instagram"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">Nama Penjaga *</label><input type="text" class="fctrl" placeholder="Nama penuh anda"/></div>
+                        <div class="col-sm-6"><label class="flbl">Alamat Emel</label><input type="email" class="fctrl" placeholder="emel@anda.com"/></div>
+                        <div class="col-sm-6"><label class="flbl">No Telefon *</label><input type="tel" class="fctrl" placeholder="012-345 6789"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Tujuan *</label>
+                           <select class="fctrl">
+                              <option>Pendaftaran Kelas Baru</option>
+                              <option>Pertanyaan Yuran & Jadual</option>
+                              <option>Personal Class (1-to-1)</option>
+                              <option>Lain-lain</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">Mesej Anda *</label><textarea class="fctrl" rows="5" placeholder="Sila nyatakan umur anak dan kelas yang diminati..."></textarea></div>
+                        <div class="col-12"><button class="btn-red" id="ctcBtn"><i class="fas fa-paper-plane"></i> Hantar Mesej</button></div>
+                     </div>
+                     <div class="sucmsg" id="ctcOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Mesej berjaya dihantar! Kami akan menghubungi anda secepat mungkin.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>	
+
+ <!-- FOOTER -->
+      <footer>
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-lg-4">
+                  <div class="fnm">Kekwa<span>Academy</span></div>
+                  <p class="fdesc">Pusat Tuisyen Akademik & Pengajian Islam pilihan utama ibu bapa di Shah Alam. Dedikasi kami adalah untuk melihat kecemerlangan berterusan dalam diri setiap pelajar.</p>
+                  <div class="fsoc">
+                     <a href="https://www.facebook.com/PusatTuisyenKekwa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                     <a href="https://instagram.com/kekwaacademy.co" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Pautan Pantas</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#hero"><i class="fas fa-chevron-right"></i>Utama</a></li>
+                     <li><a href="#about"><i class="fas fa-chevron-right"></i>Tentang Kami</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Pakej Kelas</a></li>
+                     <li><a href="#testimonials"><i class="fas fa-chevron-right"></i>Testimoni</a></li>
+                     <li><a href="#contact-section"><i class="fas fa-chevron-right"></i>Hubungi Kami</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Program Utama</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Tuisyen Akademik</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Kelas UPKK & PSRA</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Kelas Asas MAFA</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Pemantapan Jawi</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Kelas Personal</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Pengajian Dewasa</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <div class="ftit">Maklumat Perhubungan</div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+                     <div class="fciinfo"><strong>Lokasi Tuisyen</strong>Blok 6, Laman Seri Business Park, Seksyen 13, Shah Alam</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-phone-alt"></i></div>
+                     <div class="fciinfo"><strong>Telefon/WhatsApp</strong>+60 16-301 6334</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-envelope"></i></div>
+                     <div class="fciinfo"><strong>Emel</strong>kekwaacademy@gmail.com</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fbot">
+            <div class="container">
+               <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <p>&copy 2026 <span>Kekwa Academy (Pusat Tuisyen Kekwa)</span>. Hak Cipta Terpelihara.</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Back to top -->
+      <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+    
+   <!-- jQuery -->
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <!-- Bootstrap 5 -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- AOS -->
+      <script src="js/aos.js"></script>
+      <!-- Swiper -->
+      <script src="js/swiper-bundle.min.js"></script>
+      <!-- CounterUp -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Main js -->
+      <script src="js/main.js"></script>
+   </body>
+</html>
